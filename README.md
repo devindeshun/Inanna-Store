@@ -16,3 +16,5 @@ My favorite color:
 > Crimson
 
 Thank you so much for reading! ☺
+
+03/31/20 12:22 AM - Fixed redundant lines in CSS. Small changes to HTML layout.
