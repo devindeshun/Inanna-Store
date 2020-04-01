@@ -48,14 +48,15 @@ nav a {
 
 .product {
   display: flex;
+  justify-content: space-between;
   align-items: center;
-  width: 3fr;
   margin: auto;
 }
 
 .price {
-  flex: 1;
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  margin-left: 120px;
 }
 
 .product button {
@@ -89,14 +90,8 @@ span {
   border: palevioletred 2px dotted;
 }
 
-/* .menu, .logo, .cart {
-    justify-content: center;
-    margin: auto 14px;
-} */
-
 .menu a {
   float: left;
-  /* display: flex; */
   padding: 0 20px 0 0;
 }
 
@@ -119,7 +114,6 @@ span {
 footer {
   border-top: 2px black solid;
   display: flex;
-  /* width: 90%; */
   margin: 0 auto;
   list-style: none;
   background: rgba(128, 128, 128, 0.205);
@@ -160,4 +154,14 @@ footer {
   color: palevioletred;
   background-color: transparent;
   transition: 0.3s;
+}
+
+@media screen and (max-width: 955px) {
+  .product {
+    flex-direction: column-reverse;
+  }
+
+  .price {
+    margin: 20px auto;
+  }
 }
